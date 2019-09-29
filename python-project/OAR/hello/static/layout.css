@@ -1,0 +1,25 @@
+body{
+	background:#c28f8f;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	color: black;
+}
+.right_nav{
+	float:right;
+	color: red;
+}
+
+.right_nav li{
+
+	display: inline-block;
+	margin:10px;
+	color: red;
+}
+
+header{
+	background-color: #322a2a;
+	height: 70px;
+}

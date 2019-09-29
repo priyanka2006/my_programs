@@ -1,0 +1,41 @@
+<html>
+<head>
+	
+
+		<link rel="stylesheet" href={{ url_for('static', filename='layout.css') }}>
+		<link rel="stylesheet" href={{ url_for('static', filename='login.css') }}>
+	
+</head>
+
+<body>
+	
+	<header>
+	<div class="right_nav">
+		<nav>
+	 		<ul>
+				<li><a href="{{url_for('register')}}">Register</a></li>
+				<li><a href="{{url_for('login')}}">Login</a></li>
+				<li><a href="{{url_for('contactus')}}">Contact</a></li>
+	 		</ul>
+		</nav>
+	</div>
+
+	
+
+	
+		<div>
+			{% with messages= get_flashed_messages(with_categories = true) %}
+				{% if messages %}
+					{% for category,i in messages %}
+					<div class = "alert alert-{{category}}">
+						{{i}}
+					</div>
+					{% endfor %}
+				
+				{% endif %}
+			{% endwith %}
+			{% block content %}{% endblock content %}
+		</div>
+  </header>
+</body>
+</html>
