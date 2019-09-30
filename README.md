@@ -1,4 +1,4 @@
-# my_programs
+# python_project
 This repository contains all my work done in Python, HTML and CSS.
 The project  is registering and login in to the application and for registration we
 should give the details like username, email, password, login details are email and
